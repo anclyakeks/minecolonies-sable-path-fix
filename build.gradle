@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev'
+}
+
+group = 'ru.anclyakeks.compat'
+version = providers.gradleProperty('modVersion').get()
+
+base {
+    archivesName = 'minecolonies-sable-path-fix'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = providers.gradleProperty('neoForgeVersion').get()
+
+    mods {
+        mixinfix {
+            sourceSet sourceSets.main
+        }
+    }
+}

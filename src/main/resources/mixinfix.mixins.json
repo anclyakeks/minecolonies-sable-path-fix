@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.anclyakeks.mixinfix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PathMixin",
+    "MineColoniesPathJobMixin",
+    "MineColoniesNavigatorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

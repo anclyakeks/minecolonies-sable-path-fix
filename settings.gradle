@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.neoforged.net/releases' }
+    }
+
+    plugins {
+        id 'net.neoforged.moddev' version '1.0.11'
+    }
+}
+
+rootProject.name = 'minecolonies-sable-path-fix'

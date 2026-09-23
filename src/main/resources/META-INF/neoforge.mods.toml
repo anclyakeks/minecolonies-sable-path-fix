@@ -1,0 +1,41 @@
+modLoader = "lowcodefml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "mixinfix"
+version = "${file.jarVersion}"
+displayName = "MineColonies Sable Path Fix"
+authors = "anclyakeks"
+description = '''Compatibility fixes for MineColonies pathfinding with Sable and modded blocks.'''
+
+[[mixins]]
+config = "mixinfix.mixins.json"
+
+[[dependencies.mixinfix]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mixinfix]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mixinfix]]
+modId = "sable"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.mixinfix]]
+modId = "minecolonies"
+type = "required"
+versionRange = "[1.1.1396-1.21.1-snapshot]"
+ordering = "AFTER"
+side = "BOTH"
